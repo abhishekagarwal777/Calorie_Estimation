@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Calorie Calculation Results</h1>
+    <p>Total Calories: {{ result }}</p>
+    <h2>Item Breakdown:</h2>
+    <ul>
+        {% for key, value in ccc.items() %}
+            <li>{{ key }}: {{ value }} kcal</li>
+        {% endif %}
+    </ul>
+</body>
+</html>

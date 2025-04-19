@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Image Processing Result</h1>
+    <img src="{{ img_path }}" alt="Processed Image">
+    <p>Detected Categories:</p>
+    <ul>
+        {% for category in result.categorys %}
+            <li>{{ category }}</li>
+        {% endif %}
+    </ul>
+</body>
+</html>

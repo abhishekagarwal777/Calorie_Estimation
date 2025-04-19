@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form action="/k" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    {% if img_path %}
+        <h2>Uploaded Image:</h2>
+        <img src="{{ img_path }}" alt="Uploaded Image">
+    {% end %}
+</body>
+</html>
